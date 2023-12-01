@@ -44,7 +44,7 @@ def main():
     tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
     inputs = tokenizer(
         args.tweet,
-        max_length=256,
+        max_length=512,
         padding='max_length',
         truncation=True,
         return_tensors='pt'
