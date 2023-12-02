@@ -1,3 +1,3 @@
 Due to Github file size limitation, please download checkpoint "my-model" from:
 
-https://drive.google.com/file/d/18ThCsBHi_BNHxPsLV6KkSJo7UtL3_alc/view?usp=sharing
+https://drive.google.com/file/d/1k7fTu5yRuYyIv2GU4DN9W5-OFLxHu4yN/view?usp=sharing
