@@ -38,7 +38,10 @@ def main():
             return (loss.mean(), logits)
 
     model = CustomClassificationModel()
-    model.load_state_dict(torch.load(args.model_path))
+    if torch.cuda.is_available():
+        model.load_state_dict(torch.load(args.model_path))
+    else:
+        model.load_state_dict(torch.load(args.model_path, map_location=torch.device('cpu')))
 
     # Prepare the inputs
     tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
